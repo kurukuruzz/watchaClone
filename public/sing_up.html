@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/singUp.css">
-    <title>WATCHA</title>
+    <link rel="stylesheet" href="css/singUp.css">
+    <title>왓챠</title>
 </head>
 <body>
     <div class="container"> 
@@ -15,45 +15,47 @@
         </div>
         <div class="bodyDiv">
             <div class="box">
-                <span class="singUpText">회원가입</span>
-                <div class="inputBox">
-                    <input type="text" placeholder="이름 (2자 이상)">
-                    <input type="text" placeholder="이메일 (example@gamil.com)">
-                    <input type="password" placeholder="영문, 숫자, 특문 중 2개 조합 10자 이상">
-                </div>
-                <div class="agree">
-                <label>
-                    <span><img class="circle" src="/circle.png"></span>
-                    <span>전체 약관에 동의합니다</span>
-                </label>
-                <label>
-                    <span><img class="circle" src="/circle.png"></span>
-                    <span>만 14세 이상입니다</span>
-                </label>
-                <label>
-                    <span><img class="circle" src="/circle.png"></span>
-                    <button class="agreeBtn">왓챠피디아 서비스 이용약관</button>
-                    <span>에 동의합니다&nbsp;(필수)</span>
-                </label>
-                <label>
-                    <span><img class="circle" src="/circle.png"></span>
-                    <button class="agreeBtn">왓챠 서비스 이용약관</button>
-                    <span>에 동의합니다&nbsp;(필수)</span>
-                </label>
-                <label>
-                    <span><img class="circle" src="/circle.png"></span>
-                    <button class="agreeBtn">개인정보 수집 및 이용에 대한 안내</button>
-                    <span>에 동의합니다&nbsp;(필수)</span>
-                </label>
-                <label>
-                    <span><img class="circle" src="/circle.png"></span>
-                    <button class="agreeBtn">신작 알림 이벤트 정보 수신</button>
-                    <span>에 동의합니다&nbsp;(선택)</span>
-                </label>
-                </div>
-            </div>
-            <button class="createAccountBtn">계정 생성하기</button>
-            <span class="text">결제 정보요? 충분히 둘러보시고 입력해도 늦지 않아요</span>    
+                <form method="post" action="/singup">
+                    <span class="singUpText">회원가입</span>
+                    <div class="inputBox">
+                        <input type="text" name="name" placeholder="이름 (2자 이상)">
+                        <input type="text" name="email" placeholder="이메일 (example@gamil.com)">
+                        <input type="password" name="password" placeholder="영문, 숫자, 특문 중 2개 조합 10자 이상">
+                    </div>
+                    <div class="agree">
+                    <label>
+                        <span><img class="circle" src="img/circle.png"></span>
+                        <span>전체 약관에 동의합니다</span>
+                    </label>
+                    <label>
+                        <span><img class="circle" src="img/circle.png"></span>
+                        <span>만 14세 이상입니다</span>
+                    </label>
+                    <label>
+                        <span><img class="circle" src="img/circle.png"></span>
+                        <button class="agreeBtn">왓챠피디아 서비스 이용약관</button>
+                        <span>에 동의합니다&nbsp;(필수)</span>
+                    </label>
+                    <label>
+                        <span><img class="circle" src="img/circle.png"></span>
+                        <button class="agreeBtn">왓챠 서비스 이용약관</button>
+                        <span>에 동의합니다&nbsp;(필수)</span>
+                    </label>
+                    <label>
+                        <span><img class="circle" src="img/circle.png"></span>
+                        <button class="agreeBtn">개인정보 수집 및 이용에 대한 안내</button>
+                        <span>에 동의합니다&nbsp;(필수)</span>
+                    </label>
+                    <label>
+                        <span><img class="circle" src="img/circle.png"></span>
+                        <button class="agreeBtn">신작 알림 이벤트 정보 수신</button>
+                        <span>에 동의합니다&nbsp;(선택)</span>
+                    </label>
+                    </div>
+                    </div>
+                    <input type="submit" class="createAccountBtn" name="">계정 생성하기</input>
+                    <span class="text">결제 정보요? 충분히 둘러보시고 입력해도 늦지 않아요</span>    
+                </form>    
         </div>
         <div class="footerDiv">
             <div class="explanation">

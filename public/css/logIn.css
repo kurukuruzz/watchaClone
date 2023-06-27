@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -7,41 +7,35 @@ button{
     border: none;
 }
 input {
-    width: 280px;
-    height: 50px;
-    border-radius: 5px;
-    font-size: 15px;
+    width: 250px;
+    border-radius: 3px;
     border: none;
-    padding-left: 20px;
+    padding: 15px;
 }
-p {
-    color: gray;
+a{
+    cursor: pointer;
 }
 ul{
     display: flex;
     flex-direction: row;
-    float: left;
-    font-size: 10px;
+    font-weight: bold;
 }
 li{
-    display: flex;
-    flex-direction: row;
     list-style-type: none;
-    float: left;
+    font-size: 2px;
+    color: #9e9e9e;
+}
+span{
+    margin-left: -2px;
+    margin-right: 2px;
+}
+label{
+    margin-bottom: 5px;
 }
 hr{
-    width: 330px;
-    height: 1px;
-    margin: 30px 0px 20px 0px;
-    background-color: gray;
-    border: none;
-}
-footer{
+    width: 300px;
     color: gray;
-}
-a{
-    cursor: pointer;
-    color: #FFFFFF;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -53,39 +47,49 @@ a{
     background-blend-mode: multiply;
     z-index: 1;
     flex-direction: row;
+    color: #9e9e9e;
 }
 .headerDiv{
-    padding: 15px 0px 20px 50px;
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-right: 50px;
+    padding: 15px 30px 0px 50px;
 }
+.bodyDiv{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.footerDiv{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
 .box{
-    width: 100%;
-    height: 65%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
+
 .lostDiv{
     width: 310px;
     display: flex;
     justify-content: space-between; 
     margin-bottom: 10px;
 }
-.footerDiv{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
+
+
 
 /*header*/
 .logoImg {
@@ -140,6 +144,7 @@ a{
     background-color: #f32c505e;
     border-radius: 30px;
     border: none;
+    margin-bottom: 15px;
 }
 
 .text{
@@ -148,6 +153,7 @@ a{
     font-size: 11px;
     font-weight: 700;
     color: #bebebe;
+    margin-bottom: 15px;
 }
 
 /*footer*/
